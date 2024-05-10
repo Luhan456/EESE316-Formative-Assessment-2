@@ -1,9 +1,14 @@
+// Luhan Lingnau C22363 EESE316 Formative Assessment 2
+// Javascript
+
+// Delete function for calculator
 function del()
 {
     var value = document.getElementById('screen').value;
     document.getElementById('screen').value = value.substr(0, value.length - 1);
 }
 
+// Calculate function
 function calculate()
 {
     var expression = document.Calculator.text.value;
