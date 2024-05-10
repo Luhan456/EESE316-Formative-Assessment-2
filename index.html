@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luhan Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculator">
+        <div class="title">
+            <h3>Calculator</h3>
+        </div>
+        <div class="screen">
+            <form name="Calculator">
+                <input type="text" name="text" readonly id="screen">
+            </form>
+        </div>
+        <div class="cal-body">
+            <div class="button">
+                <button class="digit" onclick="document.Calculator.text.value+='7'">7</button>
+                <button class="digit" onclick="document.Calculator.text.value+='8'">8</button>
+                <button class="digit" onclick="document.Calculator.text.value+='9'">9</button>
+                <button class="del" onclick="del()">DEL</button>
+                <button class="digit" onclick="document.Calculator.text.value+='4'">4</button>
+                <button class="digit" onclick="document.Calculator.text.value+='5'">5</button>
+                <button class="digit" onclick="document.Calculator.text.value+='6'">6</button>
+                <button class="operator" onclick="document.Calculator.text.value+='+'">+</button>
+                <button class="digit" onclick="document.Calculator.text.value+='1'">1</button>
+                <button class="digit" onclick="document.Calculator.text.value+='2'">2</button>
+                <button class="digit" onclick="document.Calculator.text.value+='3'">3</button>
+                <button class="operator" onclick="document.Calculator.text.value+='-'">-</button>
+				<button onclick="document.Calculator.text.value+='.'">.</button>
+                <button class="digit" onclick="document.Calculator.text.value+='0'">0</button>
+                <button class="operator" onclick="document.Calculator.text.value+='/'">/</button>
+				<button class="operator" onclick="document.Calculator.text.value+='*'">X</button>
+                <button class="reset" onclick="document.Calculator.text.value=''">RESET</button>
+                <button class="equal" id="calculate">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
